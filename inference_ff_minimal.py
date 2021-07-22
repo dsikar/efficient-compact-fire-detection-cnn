@@ -295,6 +295,7 @@ def read_img(frame, np_transforms):
     small_frame = Image.fromarray(small_frame)
     small_frame = np_transforms(small_frame).float()
     small_frame = small_frame.unsqueeze(0)
+    # print("Device in read_img: ", device) # cuda:0
     small_frame = small_frame.to(device)
 
     return small_frame
