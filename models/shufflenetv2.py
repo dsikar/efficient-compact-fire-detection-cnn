@@ -145,6 +145,8 @@ def _shufflenetv2(arch, pretrained, progress, *args, **kwargs):
         if model_url is None:
             raise NotImplementedError('pretrained {} is not supported as of now'.format(arch))
         else:
+            # Assumed to be inefficient unless Torch is caching
+            # TODO read the docs, load from file
             pretrained_dict = torch.hub.load_state_dict_from_url(model_url, progress=progress)
             model_dict = model.state_dict()
             pretrained_dict = {k: v for k, v in pretrained_dict.items() if k in model_dict}

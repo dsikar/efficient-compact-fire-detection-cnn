@@ -1,2 +1,7 @@
 opencv-contrib-python
 Pillow
+torch
+torchvision
+opencv-python
+boto3
+botocore
