@@ -1,3 +1,8 @@
+# Cloned from 
+```
+https://github.com/NeelBhowmik/efficient-compact-fire-detection-cnn
+```
+
 # Efficient and Compact Convolutional Neural Network Architectures for Non-temporal Real-time Fire Detection
 
 Tested using Python >= 3.6.x, [PyTorch >= 1.5](https://pytorch.org/), and [OpenCV 3.x / 4.x](http://www.opencv.org) (requires opencv extra modules - ximgproc module for superpixel segmentation).
