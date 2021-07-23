@@ -326,6 +326,8 @@ if __name__ == "__main__":
 ##########################################################################
 
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    # device = 'cpu' # testing local prediction with cpu for fire1.jpg
+    # result: still predicts FIRE
     # print("DEVICE: ", device) # cuda:0 on local workstation
     #print('\n\nBegin {fire, no-fire} classification :')
 
